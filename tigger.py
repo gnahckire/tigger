@@ -75,6 +75,7 @@ hueHueHue="https://i.imgur.com/rSZf8E7.gif"
 never="https://i.imgur.com/6gf1TXj.gif"
 developers="https://thumbs.gfycat.com/CheerfulAbandonedAmethystsunbird-max-1mb.gif"
 party="https://i.imgur.com/mP8ZRTX.gif"
+normies="https://i.imgur.com/8bdx5RF.gif"
 
 bot_email = "tiggermepls@gmail.com"
 bot_name = "Tigger Me"
@@ -169,6 +170,8 @@ def index():
                 sendSparkMsg("files", [developers])
             if "party" in in_message:
                 sendSparkMsg("files", [party])
+            if "normies" in in_message:
+                sendSparkMsg("files", [normies])
     return "true"
 
 port = int(os.environ.get("PORT", 8069))
